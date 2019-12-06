@@ -646,9 +646,12 @@ header .navbar .dropdown-menu a {
 }
 
 .blog-entries .blog-entry .blog-content-body {
-  padding: 20px;
-  border: 1px solid #efefef;
+  padding: 15px;
+  border: 0.5px solid #efefef;
   border-top: none;
+  background-color: white;
+  min-height: 280px; 
+  margin-bottom: 30px;
 }
 
 .blog-entries .blog-entry img {
@@ -1846,4 +1849,9 @@ blockquote p {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+
+.main-content a:hover{
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 }
