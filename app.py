@@ -163,6 +163,6 @@ def search_by_key_word():
 
 if __name__ == '__main__':
     # dev
-    # app.run(host='127.0.0.1', port=8000, debug=True)
+    app.run(host='127.0.0.1', port=8000, debug=True)
     # deploy
-    app.run(debug=False)
+    # app.run(debug=False)
