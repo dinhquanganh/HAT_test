@@ -4,7 +4,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 from hfdb import *
 browser=webdriver.Chrome()
-browser.get('https://www.now.vn/ha-noi/danh-sach-dia-diem-phuc-vu-banh-kem-giao-tan-noi')
+browser.get('https://www.now.vn/ha-noi/danh-sach-dia-diem-giao-tan-noi?q=c%C6%A1m%20rang')
 time.sleep(2)
 ls=[]
 for i in range(3):
@@ -38,5 +38,5 @@ for i in range(3):
             # ls.append({'duong':duong,'name':name,'link':link})
     ele1=browser.find_element_by_xpath("//span[@class='icon icon-paging-next']")
     ele1.click()
-    time.sleep(2)
+    time.sleep(1)
 browser.close()
