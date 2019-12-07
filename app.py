@@ -88,7 +88,7 @@ def viahe():
 
 @app.route('/sang')
 def sang():
-    b=len(get_viahe())
+    b=len(get_sang())
     return render_template('doan.html', data=get_sang(),a=b,data_doc=get_all_doc())
 
 
