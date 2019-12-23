@@ -17,12 +17,12 @@ def goi_y():
     if ctime<4 or ctime>=23:
         c='Gợi ý ăn khuya'
         return render_template('index.html', data1=get_khuya(),a=b,d=c,data_doc=get_all_doc(),data=get_all_food())
-    elif ctime<10:
-        c='Gợi ý ăn sáng'
-        return render_template('index.html', data1=get_sang(),a=b,d=c,data_doc=get_all_doc(),data=get_all_food())
     elif ctime<15:
         c='Gợi ý ăn trưa'
         return render_template('index.html', data1=get_trua(),a=b,d=c,data_doc=get_all_doc(),data=get_all_food())
+    elif ctime<10:
+        c='Gợi ý ăn sáng'
+        return render_template('index.html', data1=get_sang(),a=b,d=c,data_doc=get_all_doc(),data=get_all_food())
     else:
         c='Gợi ý ăn tối'
         return render_template('index.html', data1=get_toi(),a=b,d=c,data_doc=get_all_doc(),data=get_all_food())
